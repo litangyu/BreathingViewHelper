@@ -37,13 +37,13 @@ It's very easy:
 
 before using, add the namespace code to your xml:
 ```java
-    // start
-    BreathingViewHelper.setBreathingBackgroundColor(
-                       findViewById(R.id.any_view),
-                       getResources().getColor(R.color.md_red_200)
-               );
-    // stop
-    BreathingViewHelper.stopBreathingBackgroundColor(findViewById(R.id.any_view));
+// start
+BreathingViewHelper.setBreathingBackgroundColor(
+                   findViewById(R.id.any_view),
+                   getResources().getColor(R.color.md_red_200)
+           );
+// stop
+BreathingViewHelper.stopBreathingBackgroundColor(findViewById(R.id.any_view));
 ```
 
 all right
