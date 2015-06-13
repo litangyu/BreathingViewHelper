@@ -7,8 +7,8 @@ demo:
 <a href="http://weibo.com/2263023493/Cmg2jze68?type=comment" target=_blank><img src="demo.png" height=320 width=320 border=0 TWFFAN="done"></img></a>
 
 ## Usage
-### Step 1
-####Gradle & Maven
+#### Step 1
+#####Gradle & Maven
 ```groovy
 dependencies {
     // I have released it but it may not update to maven center, if your maven can not find it, wait a moment please.
@@ -25,17 +25,16 @@ dependencies {
 ```
 
 
-####Or
+#####Or
 
 Import the library, then add it to your `/settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
 
 [Android Studio 简介及导入 jar 包和第三方开源库方法](http://drakeet.me/android-studio)
 
-### Step 2
+#### Step 2
 
 It's very easy:
 
-before using, add the namespace code to your xml:
 ```java
 // start
 BreathingViewHelper.setBreathingBackgroundColor(
