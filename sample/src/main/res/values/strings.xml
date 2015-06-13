@@ -2,6 +2,6 @@
     <string name="app_name">BreathingViewHelper</string>
     <string name="title_activity_main">@string/app_name</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello world!(Click here to stop)</string>
     <string name="action_settings">Settings</string>
 </resources>
