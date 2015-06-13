@@ -50,8 +50,9 @@ all right
 
 ## key
 
-<img src="http://isux.tencent.com/wp-content/uploads/2014/08/20140807172313930.png"/>
-<img src="http://isux.tencent.com/wp-content/uploads/2014/08/20140807173251857.png"/>
+<img src="img/s1.png"/>
+
+<img src="img/s2.png"/>
 
 ### Customization
 
