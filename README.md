@@ -11,6 +11,7 @@ demo:
 ####Gradle & Maven
 ```groovy
 dependencies {
+    // I have released it but it may not update to maven center, if your maven can not find it, wait a moment please.
     compile 'me.drakeet:breathingviewhelper:1.0.0'
 }
 ```

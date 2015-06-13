@@ -133,6 +133,7 @@ public class BreathingViewHelper {
                             int alpha = (int) (y * 255);
                             int resultColor = setAlphaComponent(mColor, alpha);
                             if (alpha < 0.038 * 255) {
+                                publishProgress(0);
                                 this.cancel(true);
                                 return null;
                             }
