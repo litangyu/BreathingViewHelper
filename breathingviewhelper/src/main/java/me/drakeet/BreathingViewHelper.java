@@ -38,6 +38,7 @@ public class BreathingViewHelper {
 
     private static AsyncTask<Void, Integer, Void> mAsyncTask;
     private static int mColor;
+    private static boolean mCancelled;
 
     public static void setBreathingBackgroundColor(final View view, final int color) {
         Date firstDate = new Date();
@@ -48,7 +49,7 @@ public class BreathingViewHelper {
 
             @Override
             protected Void doInBackground(Void... params) {
-                while (!isCancelled()) {
+                while (!isCancelled() || !mCancelled) {
                     Date currentDate = new Date();
                     long diffTime = currentDate.getTime() - firstTime;
                     if (diffTime > n * t) {
@@ -82,7 +83,10 @@ public class BreathingViewHelper {
     }
 
     public static void stopBreathingBackgroundColor(View view) {
-        mAsyncTask.cancel(true);
+        if (mAsyncTask != null)
+            BreathingViewHelper.mAsyncTask.cancel(true);
+        else
+            mCancelled = true;
         smoothToOrigin(view);
     }
 
